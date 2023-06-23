@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aseel's Protfolio</title>
+  <style>
+    /* Global CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Nav bar CSS */
+    nav {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      background-color: #111;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    nav .logo {
+      margin-right: auto;
+    }
+
+    nav .logo img {
+      width: 120px;
+      height: 63px;
+
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Welcome section CSS */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      margin-top: 60px;
+    }
+
+    header h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Skills section CSS */
+    #skills {
+      background-color: #111;
+      padding: 50px 0;
+    }
+
+    #skills .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .skill {
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .skill h4 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+      #about img {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  #about img:not(:last-child) {
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+
+
+
+    .progress-bar {
+      height: 10px;
+      background-color: #555;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar-inner {
+      height: 100%;
+      background-color: #00ff00;
+      border-radius: 5px;
+    }
+
+    /* Work section CSS */
+    #work {
+      background-color: #111;
+      padding: 50px 0;
+    }
+
+    #work .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      /* Insert your image here */
+      /* Example: <img src="your-image.jpg" alt="Work Image"> */
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    /* Contact section CSS */
+    #contact {
+      background-color: #111;
+      padding: 50px 0;
+      margin-left: 10px;
+    }
+
+    #contact .container {
+      text-align: center;
+    }
+    nav ul li:nth-child(4) {
+  margin-left: 10px;
+}
+  #about{
+    text-align: center;
+  }
+
+    #contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  display: block;
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#contact input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border: none;
+  background-color: #00ff00;
+  color: #111;
+  cursor: pointer;
+  font-weight: bold;
+}
+#about h3 {
+  margin-top: 20px;
+}
+#wlcm{
+  margin-left: 900px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-top: 60px;
+  background-image: url("bg1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+    #contact textarea {
+      height: 150px;
+    }
+    #skills{
+      text-align: center;
+    }
+    #work{
+      text-align: center;
+    }
+    #contact{
+      text-align: center;
+    }
+
+    #contact input[type="submit"] {
+      padding: 10px 30px;
+      border: none;
+      background-color: #00ff00;
+      color: #111;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Footer section CSS */
+    footer {
+      background-color: #111;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="0aac4334772627.5829d7b764aed.jpg" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact"style="margin-right:20px">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h2 id="wlcm">Hey its Aseel here!</h2>
+    </div>
+  </header>
+  
+  <section id="about">
+    <div class="container">
+      <h3 id="about">About Me </h3>
+      <p>Hello guys ! I'm Mohammad Aseel a passionate and dedicated individual with a love for creativity and innovation. With a strong background in web development, I enjoy crafting visually appealing and user-friendly websites. I am a lifelong learner, always seeking new challenges to expand my skills. Through effective communication and a collaborative mindset, I thrive in team environments.I am a driven and detail-oriented professional who values precision and quality in my work. With a knack for problem-solving and a passion for technology, I excel in finding elegant solutions to complex challenges. I am a proactive learner, constantly staying up-to-date with the latest industry trends and tools. My strong work ethic and positive attitude drive me to deliver exceptional results.</p>
+      <!-- Add your image here -->
+      <img src="WhatsApp Image 2023-06-19 at 5.48.13 PM (1).jpeg" alt="Your Image"style="margin-top:20px">
+      <img src="WhatsApp Image 2023-06-19 at 5.48.13 PM.jpeg" alt="Your image">
+      <img src="WhatsApp Image 2023-06-19 at 5.48.14 PM.jpeg" alt="">
+      <p>With a curious mind and a creative spirit, I approach every project with enthusiasm and a desire to make a meaningful impact. I thrive in fast-paced environments that allow me to utilize my strong problem-solving abilities and attention to detail. As a lifelong learner, I am always seeking opportunities to expand my knowledge and skills.As a highly motivated and goal-oriented individual, I constantly push myself to achieve excellence in everything I do. With a background in both design and development, I bring a unique blend of creativity and technical expertise to my work. I am a proactive communicator and enjoy collaborating with others to bring ideas to life.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h3 >Skills</h3>
+      <div class="skill">
+        <h4>HTML</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>CSS</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>JAVASCRIPT</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>PYTHON</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>FLASK</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>mysql</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>PHP</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>JAVA</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>C++</h4>
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width: 70%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h4 id="work">Work</h4>
+    <div class="container">
+      <div class="card">
+        <!-- Insert Image Here -->
+        <img src="p2.png" alt="Work Image">
+        <h4>Online Food Website</h4>
+        <p>Online food ordering is the process of ordering food, for delivery or pickup, from a website or other application. The product can be either ready-to-eat food (e.g., direct from a home-kitchen, restaurant, or a virtual restaurant) or food that has not been specially prepared for direct consumption (e.g., vegetables direct from a farm/garden, fruits, frozen meats. etc).</p>
+      </div>
+      <div class="card">
+        <!-- Insert Image Here -->
+        <img src="p1.png" alt="Work Image">
+        <h4>Ecommerce Website</h4>
+        <p>An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.</p>
+      </div>
+      <div class="card">
+        <!-- Insert Image Here -->
+        <img src="p3.avif" alt="Work Image">
+        <h4>Php developer</h4>
+        <p>responsible for writing server-side web application logic. PHP developers usually develop back-end components, connect the application with the other (often third-party) web services, and support the front-end developers by integrating their work with the application.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h3 id="contact">Contact</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Aseel - All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
